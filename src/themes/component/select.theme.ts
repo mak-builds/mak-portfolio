@@ -1,0 +1,101 @@
+export default {
+  baseStyle: {
+    field: {
+      fontWeight: 400,
+    },
+  },
+  variants: {
+    main: {
+      field: {
+        bg: "transparent",
+        border: "1px solid",
+        color: "secondaryGray.600",
+        borderColor: "secondaryGray.100",
+        borderRadius: "16px",
+        _placeholder: { color: "secondaryGray.600" },
+      },
+      icon: {
+        color: "secondaryGray.600",
+      },
+    },
+    mini: {
+      field: {
+        bg: "transparent",
+        border: "0px solid transparent",
+        fontSize: "0px",
+        p: "10px",
+        _placeholder: { color: "secondaryGray.600" },
+      },
+      icon: {
+        color: "secondaryGray.600",
+      },
+    },
+    subtle: {
+      box: {
+        width: "unset",
+      },
+      field: {
+        bg: "transparent",
+        border: "0px solid",
+        color: "secondaryGray.600",
+        borderColor: "transparent",
+        width: "max-content",
+        _placeholder: { color: "secondaryGray.600" },
+      },
+      icon: {
+        color: "secondaryGray.600",
+      },
+    },
+    transparent: {
+      field: {
+        bg: "transparent",
+        border: "0px solid",
+        width: "min-content",
+        color: "secondaryGray.600",
+        borderColor: "transparent",
+        padding: "0px",
+        paddingLeft: "8px",
+        paddingRight: "20px",
+        fontWeight: "700",
+        fontSize: "14px",
+        _placeholder: { color: "secondaryGray.600" },
+      },
+      icon: {
+        transform: "none !important",
+        position: "unset !important",
+        width: "unset",
+        color: "secondaryGray.600",
+        right: "0px",
+      },
+    },
+    auth: {
+      field: {
+        bg: "transparent",
+        border: "1px solid",
+
+        borderColor: "secondaryGray.100",
+        borderRadius: "16px",
+        _placeholder: { color: "secondaryGray.600" },
+      },
+    },
+    authSecondary: {
+      field: {
+        bg: "transparent",
+        border: "1px solid",
+
+        borderColor: "secondaryGray.100",
+        borderRadius: "16px",
+        _placeholder: { color: "secondaryGray.600" },
+      },
+    },
+    search: {
+      field: {
+        border: "none",
+        py: "11px",
+        borderRadius: "inherit",
+        _placeholder: { color: "secondaryGray.600" },
+      },
+    },
+  },
+  sizes: {},
+};
