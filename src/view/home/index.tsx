@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { Flex, Text, Link } from "@chakra-ui/react";
+import { Flex, Text, Link, Divider, useMediaQuery } from "@chakra-ui/react";
 import AchievementsSection from "@/Components/Achievements";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareUpwork } from "react-icons/fa6";
@@ -11,21 +11,30 @@ import { AiFillInstagram } from "react-icons/ai";
 import AboutComponent from "@/Components/About";
 import FooterComponent from "@/Components/Footer";
 import TechStacks from "@/Components/TechStack";
+import ProjectComponent from "@/Components/Projects/indext";
+import ServicesComponent from "@/Components/Services";
 
 const HomeConponent = () => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
-    <Flex width={"100%"} px={12} flexDir={"column"}>
-      <Flex width={"inherit"} py={24}>
+    <Flex width={"100%"} px={isMobile ? 6 : 12} flexDir={"column"}>
+      <Flex
+        width={"inherit"}
+        py={isMobile ? 10 : 24}
+        flexDir={isMobile ? "column" : "row"}
+      >
         <motion.div
+          style={{ width: "fit-content" }}
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Text variant={"96-900"}>
+          <h1>
             Hello, I&apos;m <br></br>
             <TypeAnimation
               sequence={[
-                "Mayank verma",
+                "Mayank Verma",
                 2000,
                 "Software Developer",
                 2000,
@@ -34,15 +43,20 @@ const HomeConponent = () => {
                 "UI/UX Designer",
                 2000,
               ]}
-              wrapper="span"
+              wrapper="h1"
               speed={50}
               repeat={Infinity}
             />
-          </Text>
-          <Text variant={"22-400"} width={"70%"}>
-            A passionate frontend developer based in Indore, India. I specialize
-            in building dynamic, user-friendly web applications that help
-            businesses succeed online.
+          </h1>
+          <Text
+            width={isMobile ? "100%" : "70%"}
+            as={"h5"}
+            mt={isMobile ? 4 : 0}
+          >
+            Passionate frontend developer, adept in ReactJS, NextJS, dedicated
+            to helping clients achieve their digital goals by crafting
+            exceptional user experiences with a keen eye for detail and a
+            commitment to excellence.
           </Text>
           <Flex gap={4} my={8}>
             <Link
@@ -73,14 +87,17 @@ const HomeConponent = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Flex flexDir={"column"} alignItems={"center"}>
-            <Image
-              src="/images/avatar_aigen.png"
-              alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={500}
-              height={400}
-            />
+          <Flex flexDir={"column"} alignItems={isMobile ? "inherit" : "center"}>
+            {!isMobile && (
+              <Image
+                src="/images/avatar_aigen.png"
+                // src="/images/mak.svg"
+                alt="hero image"
+                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                width={500}
+                height={400}
+              />
+            )}
             <Flex gap={4} mt={8}>
               <Link
                 target="_blank"
@@ -102,7 +119,12 @@ const HomeConponent = () => {
       </Flex>
       <AchievementsSection />
       <TechStacks />
+      <Divider />
       <AboutComponent />
+      <Divider />
+      <ServicesComponent />
+      <Divider />
+      <ProjectComponent />
       <FooterComponent />
     </Flex>
   );

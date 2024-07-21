@@ -1,7 +1,7 @@
 "use client";
 
 import { techStacks } from "@/utils";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, useMediaQuery } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { AiFillHtml5 } from "react-icons/ai";
@@ -32,23 +32,124 @@ const marqueeVariants = {
 };
 
 export default function TechStacks() {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
-    <Box mt={12} mx={12}>
+    <Box my={20} mx={isMobile ? 0 : 12}>
       <Flex flexDir={"column"}>
-        <h1 style={{ textAlign: "center" }}>Technologies I use</h1>
-        <div className="slider">
-          <div className="slider-items">
-            <SiHtml5 size={70} />
-            <DiCss3 size={70} />
-            <SiJavascript size={70} />
-            <SiTypescript size={70} />
-            <RiReactjsLine size={70} />
-            <TbBrandRedux size={70} />
-            <FaGithub size={70} />
-            <SiChakraui size={70} />
-            <SiSass size={70} />
-          </div>
-        </div>
+        <h2 style={{ textAlign: "center" }}>Technologies I use</h2>
+        <Box className="slider" mt={12}>
+          <Flex className="slider-items" gap={isMobile ? "50px" : "100px"}>
+            <Flex
+              flexDir={"column"}
+              alignItems={"center"}
+              border={"1px white solid"}
+              px={8}
+              py={4}
+            >
+              <SiHtml5 size={40} />
+              <Text as={"h6"} pt={2}>
+                HTML
+              </Text>
+            </Flex>
+            <Flex
+              flexDir={"column"}
+              alignItems={"center"}
+              border={"1px white solid"}
+              px={8}
+              py={4}
+            >
+              <DiCss3 size={40} />
+              <Text as={"h6"} pt={2}>
+                CSS
+              </Text>
+            </Flex>
+            <Flex
+              flexDir={"column"}
+              alignItems={"center"}
+              border={"1px white solid"}
+              px={8}
+              py={4}
+            >
+              <SiJavascript size={40} />
+              <Text as={"h6"} pt={2}>
+                JavaScript
+              </Text>
+            </Flex>
+            <Flex
+              flexDir={"column"}
+              alignItems={"center"}
+              border={"1px white solid"}
+              px={8}
+              py={4}
+            >
+              <SiTypescript size={40} />
+              <Text as={"h6"} pt={2}>
+                TypeScript
+              </Text>
+            </Flex>
+            <Flex
+              flexDir={"column"}
+              alignItems={"center"}
+              border={"1px white solid"}
+              px={8}
+              py={4}
+            >
+              <RiReactjsLine size={40} />
+              <Text as={"h6"} pt={2}>
+                ReactJS
+              </Text>
+            </Flex>
+            <Flex
+              flexDir={"column"}
+              alignItems={"center"}
+              border={"1px white solid"}
+              px={8}
+              py={4}
+            >
+              <TbBrandRedux size={40} />
+              <Text as={"h6"} pt={2}>
+                Redux
+              </Text>
+            </Flex>
+            <Flex
+              flexDir={"column"}
+              alignItems={"center"}
+              border={"1px white solid"}
+              px={8}
+              py={4}
+            >
+              <FaGithub size={40} />
+              <Text as={"h6"} pt={2}>
+                Github
+              </Text>
+            </Flex>
+            <Flex
+              flexDir={"column"}
+              alignItems={"center"}
+              border={"1px white solid"}
+              px={8}
+              py={4}
+            >
+              <SiChakraui size={40} />
+              <Text as={"h6"} pt={2}>
+                ChakraUI
+              </Text>
+            </Flex>
+            <Flex
+              flexDir={"column"}
+              alignItems={"center"}
+              border={"1px white solid"}
+              px={8}
+              py={4}
+            >
+              <SiSass size={40} />
+              <Text as={"h6"} pt={2}>
+                SASS
+              </Text>
+            </Flex>
+          </Flex>
+        </Box>
       </Flex>
     </Box>
   );

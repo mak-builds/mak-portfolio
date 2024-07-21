@@ -16,7 +16,7 @@ const Preloader = () => {
           duration: 0.5,
         }}
       >
-        <Text variant={"56-900"}>{"<React />"}</Text>
+        <h2>{"<React />"}</h2>
       </motion.div>
     </Flex>
   );

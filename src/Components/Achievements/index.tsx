@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import dynamic from "next/dynamic";
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, useMediaQuery } from "@chakra-ui/react";
 
 const achievementsList = [
   {
@@ -26,23 +25,25 @@ const achievementsList = [
 ];
 
 const AchievementsSection = () => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <Flex
       justifyContent={"space-around"}
       border={"1px #5d5d5d solid"}
       p={4}
-      mt={12}
-      mx={12}
+      mt={isMobile ? 0 : 12}
+      mx={isMobile ? 0 : 12}
     >
       {achievementsList.map((achievement, index) => {
         return (
           <Flex key={index} alignItems={"center"} flexDir={"column"}>
-            <Text variant={"36-900"} height={"fit-content"}>
+            <h3>
               {achievement.prefix}
               {achievement.value}
               {achievement.postfix}
-            </Text>
-            <p>{achievement.metric}</p>
+            </h3>
+            <h6>{achievement.metric}</h6>
           </Flex>
         );
       })}
