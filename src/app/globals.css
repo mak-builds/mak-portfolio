@@ -6,6 +6,7 @@
   border: none;
   background: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {

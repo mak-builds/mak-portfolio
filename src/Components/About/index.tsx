@@ -41,7 +41,7 @@ const AboutComponent = () => {
         >
           Who am I?
         </Text>
-        <Text as={"h6"} wordBreak={"break-all"}>
+        <Text as={"h6"}>
           A passionate frontend developer with over three years of experience
           specialize in ReactJS and NextJS. I am passionate about crafting
           bespoke websites that empower businesses to thrive online. My
@@ -49,9 +49,12 @@ const AboutComponent = () => {
           responsive, user-centric designs. Known for my commitment to
           excellence and attention to detail. Whether working on a new feature
           or refining a user interface, I bring creativity and precision to
-          every task. Lets collaborate to bring your digital vision to life!
+          every task. Let’s collaborate to bring your digital vision to life and
+          create a compelling online presence that stands out in today’s
+          competitive market. Together, we can build solutions that are both
+          visually stunning and technically robust.
         </Text>
-        <Text
+        {/* <Text
           as={"h5"}
           pt={4}
           mb={4}
@@ -64,7 +67,7 @@ const AboutComponent = () => {
           <ListItem>Jineshwar public school</ListItem>
           <ListItem>Jineshwar H.S (10+2) school</ListItem>
           <ListItem>Sage university, Indore</ListItem>
-        </UnorderedList>
+        </UnorderedList> */}
       </Flex>
     </Flex>
   );
