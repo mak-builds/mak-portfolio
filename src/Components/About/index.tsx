@@ -17,6 +17,7 @@ const AboutComponent = () => {
       mx={isMobile ? 0 : 12}
       my={isMobile ? 12 : 20}
       justifyContent={"space-between"}
+      id="about"
     >
       {!isLaptop && (
         <Image

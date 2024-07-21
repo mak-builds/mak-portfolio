@@ -9,7 +9,12 @@ const ProjectComponent = () => {
   const [isLaptop] = useMediaQuery("(max-width: 1024px)");
 
   return (
-    <Flex mx={isMobile ? 0 : 12} my={isMobile ? 12 : 20} flexDir={"column"}>
+    <Flex
+      mx={isMobile ? 0 : 12}
+      my={isMobile ? 12 : 20}
+      flexDir={"column"}
+      id="projects"
+    >
       <Text
         as={isMobile ? "h2" : "h3"}
         mb={12}
