@@ -41,7 +41,7 @@ const ProjectComponent = () => {
           <Text as={"h5"} fontWeight={"bold"}>
             Admin Portal
           </Text>
-          <Text as={"h6"} mt={4} wordBreak={"break-all"}>
+          <Text as={"h6"} mt={4}>
             Our Admin Portal is a robust web application designed to streamline
             and simplify administrative tasks. It offers comprehensive
             management capabilities, including user account control, data
@@ -64,7 +64,7 @@ const ProjectComponent = () => {
           <Text as={"h5"} fontWeight={"bold"}>
             Blog
           </Text>
-          <Text as={"h6"} mt={4} wordBreak={"break-all"}>
+          <Text as={"h6"} mt={4}>
             Our Blogging Website is a dynamic platform designed to empower
             writers and content creators. It features an elegant and
             user-friendly interface that makes publishing and managing content a
@@ -87,7 +87,7 @@ const ProjectComponent = () => {
           <Text as={"h5"} fontWeight={"bold"}>
             Personal portfolio
           </Text>
-          <Text as={"h6"} mt={4} wordBreak={"break-all"}>
+          <Text as={"h6"} mt={4}>
             My Personal Portfolio is a sleek and modern web application designed
             to showcase my skills, projects, and professional journey. Featuring
             a clean and responsive design, it provides an engaging user

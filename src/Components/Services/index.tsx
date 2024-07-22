@@ -34,7 +34,7 @@ const ServicesComponent = () => {
           <Text as={"h5"} fontWeight={"bold"}>
             Web Application Development
           </Text>
-          <Text as={"h6"} mt={4} wordBreak={"break-all"}>
+          <Text as={"h6"} mt={4}>
             Our web app service offers a comprehensive solution tailored to meet
             your unique business needs. We specialize in creating responsive,
             user-friendly, and visually stunning web applications that provide a
@@ -56,7 +56,7 @@ const ServicesComponent = () => {
           <Text as={"h5"} fontWeight={"bold"}>
             Mobile Application Development
           </Text>
-          <Text as={"h6"} mt={4} wordBreak={"break-all"}>
+          <Text as={"h6"} mt={4}>
             In todays mobile-first world, having a standout mobile application
             is essential. Our mobile application development service is
             dedicated to creating high-performance, feature-rich apps for both
@@ -78,7 +78,7 @@ const ServicesComponent = () => {
           <Text as={"h5"} fontWeight={"bold"}>
             Backend Development
           </Text>
-          <Text as={"h6"} mt={4} wordBreak={"break-all"}>
+          <Text as={"h6"} mt={4}>
             Behind every great application is a powerful backend infrastructure.
             Our backend development service provides the foundation your
             applications need to run smoothly and efficiently. We specialize in
