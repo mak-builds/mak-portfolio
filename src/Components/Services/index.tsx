@@ -22,7 +22,7 @@ const ServicesComponent = () => {
         flexWrap={isLaptop ? "wrap" : "nowrap"}
       >
         <Flex
-          border={"1px white solid"}
+          border={"1px #5d5d5d solid"}
           flexDir={"column"}
           px={4}
           py={8}
@@ -44,7 +44,7 @@ const ServicesComponent = () => {
           </Text>
         </Flex>
         <Flex
-          border={"1px white solid"}
+          border={"1px #5d5d5d solid"}
           flexDir={"column"}
           px={4}
           py={8}
@@ -66,7 +66,7 @@ const ServicesComponent = () => {
           </Text>
         </Flex>
         <Flex
-          border={"1px white solid"}
+          border={"1px #5d5d5d solid"}
           flexDir={"column"}
           px={4}
           py={8}

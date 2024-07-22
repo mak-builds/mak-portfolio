@@ -24,8 +24,8 @@ const AboutComponent = () => {
           src="/images/mak.svg"
           alt="hero image"
           className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-          width={500}
-          height={400}
+          width={400}
+          height={200}
         />
       )}
       <Flex
@@ -51,8 +51,7 @@ const AboutComponent = () => {
           or refining a user interface, I bring creativity and precision to
           every task. Let’s collaborate to bring your digital vision to life and
           create a compelling online presence that stands out in today’s
-          competitive market. Together, we can build solutions that are both
-          visually stunning and technically robust.
+          competitive market.
         </Text>
         {/* <Text
           as={"h5"}

@@ -43,7 +43,7 @@ export default function TechStacks() {
             <Flex
               flexDir={"column"}
               alignItems={"center"}
-              border={"1px white solid"}
+              border={"1px #5d5d5d solid"}
               px={8}
               py={4}
             >
@@ -55,7 +55,7 @@ export default function TechStacks() {
             <Flex
               flexDir={"column"}
               alignItems={"center"}
-              border={"1px white solid"}
+              border={"1px #5d5d5d solid"}
               px={8}
               py={4}
             >
@@ -67,7 +67,7 @@ export default function TechStacks() {
             <Flex
               flexDir={"column"}
               alignItems={"center"}
-              border={"1px white solid"}
+              border={"1px #5d5d5d solid"}
               px={8}
               py={4}
             >
@@ -79,7 +79,7 @@ export default function TechStacks() {
             <Flex
               flexDir={"column"}
               alignItems={"center"}
-              border={"1px white solid"}
+              border={"1px #5d5d5d solid"}
               px={8}
               py={4}
             >
@@ -91,7 +91,7 @@ export default function TechStacks() {
             <Flex
               flexDir={"column"}
               alignItems={"center"}
-              border={"1px white solid"}
+              border={"1px #5d5d5d solid"}
               px={8}
               py={4}
             >
@@ -103,7 +103,7 @@ export default function TechStacks() {
             <Flex
               flexDir={"column"}
               alignItems={"center"}
-              border={"1px white solid"}
+              border={"1px #5d5d5d solid"}
               px={8}
               py={4}
             >
@@ -115,7 +115,7 @@ export default function TechStacks() {
             <Flex
               flexDir={"column"}
               alignItems={"center"}
-              border={"1px white solid"}
+              border={"1px #5d5d5d solid"}
               px={8}
               py={4}
             >
@@ -127,7 +127,7 @@ export default function TechStacks() {
             <Flex
               flexDir={"column"}
               alignItems={"center"}
-              border={"1px white solid"}
+              border={"1px #5d5d5d solid"}
               px={8}
               py={4}
             >
@@ -139,7 +139,7 @@ export default function TechStacks() {
             <Flex
               flexDir={"column"}
               alignItems={"center"}
-              border={"1px white solid"}
+              border={"1px #5d5d5d solid"}
               px={8}
               py={4}
             >

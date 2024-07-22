@@ -123,8 +123,9 @@ const HomeConponent = () => {
       <AboutComponent />
       <Divider />
       <ServicesComponent />
-      <Divider />
+      {/* <Divider /> */}
       <ProjectComponent />
+      <Divider />
       <FooterComponent />
     </Flex>
   );
