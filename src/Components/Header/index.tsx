@@ -1,5 +1,6 @@
 "use client";
 import { Flex, Text, useMediaQuery } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -21,13 +22,16 @@ const HeaderComponent = () => {
     <Flex
       alignItems={"center"}
       justifyContent={"space-between"}
-      py={2}
+      py={6}
       px={isMobile ? 6 : 0}
       borderBottom={"1px #5d5d5d  solid"}
     >
-      <Text as={"h2"} fontWeight={"900"}>
-        mAk
-      </Text>
+      <Flex>
+        <Image src={"/makwhitelogo.png"} alt="" height={70} width={70} />
+        {/* <Text ml={4} as={"h2"} fontWeight={"900"}>
+          mAk
+        </Text> */}
+      </Flex>
       <Flex gap={8}>
         {navLinks.map((link, index) => (
           <Link key={index} href={link.path}>

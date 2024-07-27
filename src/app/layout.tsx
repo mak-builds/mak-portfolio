@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     "This is my personal portfolio to showcase my skills and projects, It briefly describes the tecknologies I  work on.",
   robots: "index, follow",
   icons: {
-    icon: "/logoblack.svg", // Path to your favicon
-    apple: "/logoblack.svg", // Path to your Apple touch icon
+    icon: "/makwhitelogo.png", // Path to your favicon
+    apple: "/makwhitelogo.png", // Path to your Apple touch icon
   },
   openGraph: {
     title: "Personal portfolio",
@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logoblack.svg" sizes="any" />
+        <link rel="icon" href="/makwhitelogo.png" sizes="any" />
       </head>
       <body id={"root"} className={dmSans.className}>
         <AppWrappers>{children}</AppWrappers>
