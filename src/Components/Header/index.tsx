@@ -27,7 +27,7 @@ const HeaderComponent = () => {
       borderBottom={"1px #5d5d5d  solid"}
     >
       <Flex>
-        <Image src={"/makwhitelogo.png"} alt="" height={70} width={70} />
+        <Image src={"/makwhitelogo.png"} alt="" height={50} width={50} />
         {/* <Text ml={4} as={"h2"} fontWeight={"900"}>
           mAk
         </Text> */}
