@@ -13,9 +13,14 @@ import FooterComponent from "@/Components/Footer";
 import TechStacks from "@/Components/TechStack";
 import ProjectComponent from "@/Components/Projects/indext";
 import ServicesComponent from "@/Components/Services";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const HomeConponent = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
+
+  const handleGTag = () => {
+    sendGAEvent({ event: "buttonClicked", value: "me" });
+  };
 
   return (
     <Flex width={"100%"} px={isMobile ? 6 : 12} flexDir={"column"}>
@@ -57,6 +62,7 @@ const HomeConponent = () => {
             to helping clients achieve their digital goals by crafting
             exceptional user experiences with a keen eye for detail and a
             commitment to excellence.
+            <button onClick={handleGTag}>Click GA</button>
           </Text>
           <Flex gap={4} my={8}>
             <Link

@@ -53,20 +53,6 @@ const AboutComponent = () => {
           create a compelling online presence that stands out in today’s
           competitive market.
         </Text>
-        {/* <Text
-          as={"h5"}
-          pt={4}
-          mb={4}
-          borderBottom={"1px white solid"}
-          fontWeight={"bold"}
-        >
-          Education
-        </Text>
-        <UnorderedList>
-          <ListItem>Jineshwar public school</ListItem>
-          <ListItem>Jineshwar H.S (10+2) school</ListItem>
-          <ListItem>Sage university, Indore</ListItem>
-        </UnorderedList> */}
       </Flex>
     </Flex>
   );
