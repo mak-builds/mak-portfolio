@@ -114,7 +114,7 @@ const HomeConponent = () => {
               </Link>
               <Link
                 variant={"button"}
-                href="mayank_verma_react.pdf"
+                href="Mayank-Verma-React-Next.pdf"
                 target="_blank"
               >
                 <span>Download CV</span>
